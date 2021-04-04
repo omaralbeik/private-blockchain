@@ -27,7 +27,7 @@ class Block {
      * from outside the application tried to change values in the block data as a consecuence
      * the hash of the block should be different.
      */
-    validate() {
+    async validate() {
         // Get current hash
         const currentHash = this.hash;
 

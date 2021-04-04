@@ -109,7 +109,7 @@ class Blockchain {
         let errors = [];
         for (let i = 0; i < this.height; i++) {
             const block = this.chain[i];
-            if (!block.validate()) { // Invalid block.
+            if (!(await block.validate())) { // Invalid block.
                 errors.push(new Error(`Invalid block hash detected ${block.hash}`));
             }
 

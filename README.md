@@ -84,3 +84,9 @@ localhost:8000/block/{{HASH}}
 ```
 localhost:8000/block/{{WALLET_ADDRESS}}
 ```
+### Validate the chain
+
+###### Endpoint
+```
+localhost:8000/validateChain
+```
